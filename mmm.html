@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片悬停效果</title>
+	<style>
+	figure{
+       width:480px;
+       height:300p;
+       border:10px solid #fff;
+       box-shadow:0px 0px 5px 0 #000;
+       overflow:hidden;
+       position:relative;
+	}
+   figure img{
+   	transform:scale(1) ;
+   }
+   figure:hover img{
+   	 transform:scale(1.2);
+   }
+   figure figcaption{
+   	  position:absolute;
+   	  bottom:0;
+   	  width:100%;
+   	  height:30px;
+   	  color:rgba(0,0,0,0);
+   	  background-color: rgba(255,255,255,0);
+   	  text-align: center
+   	  line-height:30px;
+   	  transition:color .5s,background-color 1s;
+    }
+    figure:hover figcaption{
+      color:rgba(0,0,255,.9);
+      background-color:rgba(255,255,255,.6);
+    }
+ </style>
+</head>
+<body> 
+	<figure>
+  <img src="http://img5q.duitang.com/uploads/item/201501/24/20150124090857_BytTf.jpeg">
+  </figure>
+	
+</body>
+</html>
